@@ -1,4 +1,6 @@
 .Home {
+  margin-top: -70px;
+
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -6,6 +8,11 @@
   justify-content: center;
   font-size: calc(11px + 1vh);
   color: white;
+}
+
+.Home-navbar {
+  justify-content: center;
+  width: 100%;
 }
 
 .Home .logo {
@@ -33,6 +40,7 @@
 
 .Home .appstoreicon {
   width: 20vh;
+  margin-bottom: 1vh;
 }
 
 .Home .exampleoption {
@@ -98,8 +106,7 @@
 }
 
 .Home .qdnsystem table td {
-  font-size: 2vh;
-  color: #282c34;
+  width: 30vh;
 }
 
 .Home .qdnsystem .outcome {

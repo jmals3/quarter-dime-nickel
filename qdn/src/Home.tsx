@@ -11,6 +11,7 @@ import THT from "./img/Outcomes/THT.png"
 import TTH from "./img/Outcomes/TTH.png"
 import TTT from "./img/Outcomes/TTT.png"
 import './Home.css'
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -22,8 +23,20 @@ function Home() {
 
   return (
     <div className="Home">
+      <div className="Home-navbar">
+        <Navbar expand="sm" variant="dark">
+          <Navbar.Toggle aria-controls="basic-navbar-nav" className="ml-auto" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ml-auto">
+              <Nav.Link href="/play">Play</Nav.Link>
+              <Nav.Link href="#">Download</Nav.Link>
+              <Nav.Link href="#">Blog</Nav.Link>
+              <Nav.Link href="#">Login</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+      </div>
       <div className="section header">
-        <div className="navbar"></div>
         <img src={logo} className="logo" alt="Logo" />
         <h1>Free Yourself From Indecision</h1>
         <Link to="/play" className="btn btn-dark playbtn">Play</Link>
@@ -69,17 +82,12 @@ function Home() {
           <h2>The QDN System</h2>
           <p>QDN helps you quickly come to a decision for your problem.</p>
           <p>There are 8 possible outcomes when you flip a quarter, a dime, and a nickel.</p>
+          <a href="#"><i>Why is 8 significant?</i></a>
           <table className="outcome-table">
             <tbody>
               <tr>
                 <td>
-                  Heads, Heads, Heads
-                </td>
-                <td>
                   <img src={HHH} className="outcome" />
-                </td>
-                <td>
-                  Tails, Heads, Heads
                 </td>
                 <td>
                   <img src={THH} className="outcome" />
@@ -87,13 +95,7 @@ function Home() {
               </tr>
               <tr>
                 <td>
-                  Heads, Heads, Tails
-                </td>
-                <td>
                   <img src={HHT} className="outcome" />
-                </td>
-                <td>
-                  Tails, Heads, Tails
                 </td>
                 <td>
                   <img src={THT} className="outcome" />
@@ -101,13 +103,7 @@ function Home() {
               </tr>
               <tr>
                 <td>
-                  Heads, Tails, Heads
-                </td>
-                <td>
                   <img src={HTH} className="outcome" />
-                </td>
-                <td>
-                  Tails, Tails, Heads
                 </td>
                 <td>
                   <img src={TTH} className="outcome" />
@@ -115,13 +111,7 @@ function Home() {
               </tr>
               <tr>
                 <td>
-                  Heads, Tails, Tails
-                </td>
-                <td>
                   <img src={HTT} className="outcome" />
-                </td>
-                <td>
-                  Tails, Tails, Tails
                 </td>
                 <td>
                   <img src={TTT} className="outcome" />
@@ -130,18 +120,25 @@ function Home() {
             </tbody>
           </table>
           <br />
-          <p>For each of these outcomes, come up with a possible course of action to address the problem.  It is significant that you come up with <a href="#">8 options.</a></p>
+          <p>For each outcome, choose 1 possible course of action.</p>
           {/* <img src={exampleoption} className="exampleoption" /> */}
-          <p>Then flip the 3 coins, and get 1 result and <a href="#" className="emphasis">obey it.</a></p>
+          <p>Then flip the 3 coins, and get 1 result and <a href="#" className="emphasis">follow it.</a></p>
         </div>
-        <div className="section example">
+      </div>
+      <div className="section example solution">
+      <div className="blurb">
+          <h2>Example</h2>
+        </div>
+        update the Play screen and use screenshots here.
+      </div>
+      <div className="section whyqnd problem">
+        <div className="blurb">
+          <h2>Why QDN?</h2>
+        </div>
+        include this?  might be better off putting this in the blog.
+        {/* <p>This simple game allows for a structured way, to randomly make choices.  All three coins are different so when flipped there are 8 possible outcomes.</p>
+        <p>Before flipping the coins, you must label each possible outcome with a potential course of action.  You can do this by jotting down your 8 options on a sheet of paper, by using this webiste, or by downloading the official QDN iPhone app.  Then the quarter, dime, and nickel are all flipped at once.  The option corresponding to the heads and tails of each coin is selected.</p> */}
 
-        </div>
-        <div className="section whyqnd">
-          <p>This simple game allows for a structured way, to randomly make choices.  All three coins are different so when flipped there are 8 possible outcomes.</p>
-          <p>Before flipping the coins, you must label each possible outcome with a potential course of action.  You can do this by jotting down your 8 options on a sheet of paper, by using this webiste, or by downloading the official QDN iPhone app.  Then the quarter, dime, and nickel are all flipped at once.  The option corresponding to the heads and tails of each coin is selected.</p>
-
-        </div>
       </div>
       <div>
         <br />
@@ -157,17 +154,6 @@ function Home() {
         <p>I've found that instead of toiling in our indecision, we can harness it.  To do this we must relieve ourselves from the pressure of deciding.  When we hit these mental impasses, we must seek help.  In many situations, when there is no clear "best" course of action, logically reasoning through the decision is impractical and inefficient.  We're better off making a random decision than going through all of that analysis.  That is where Quarter Dime Nickel comes into play.</p>
 
 
-        <h3>The QDN System</h3>
-
-        <img src={HHH} />
-        <img src={HHT} />
-        <img src={HTH} />
-        <img src={HTT} />
-        <img src={THH} />
-        <img src={THT} />
-        <img src={TTH} />
-        <img src={TTT} />
-
 
         <p>To get the most out of QDN, it is best to provide a logical order when labeling the outcomes.  You can use individual coins to represent micro-decisions within the overall decision being made.</p>
 
@@ -175,10 +161,6 @@ function Home() {
 
         <h3>Achieving Your Destiny</h3>
         <p>The most paramount rule of QDN is to obey the outcome of each game.  The resulting course of action determined by the coin toss must at least be attempted before you play again.  It is fabled that if you play with integrity and always give your chosen recourse a good faith effort, then the game will always choose the best option for you in that moment in time and guide you to your destiny.</p>
-      </div>
-
-      <div className="section solution">
-
       </div>
     </div>
   )
