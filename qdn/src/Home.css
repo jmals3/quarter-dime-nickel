@@ -1,0 +1,108 @@
+.Home {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(11px + 1vh);
+  color: white;
+}
+
+.Home .logo {
+  height: 35vh;
+  pointer-events: none;
+  margin-bottom: 3vh;
+}
+
+.Home h1 {
+  font-size: 5vh;
+  margin: 5vh;
+}
+
+.Home h2 {
+  font-size: 4vh;
+  margin: 3vh;
+}
+
+.Home .playbtn {
+  font-size: 5vh;
+  padding: 0vh 5vh 0vh 5vh;
+  margin: 3vh;
+  width: 20vh;
+}
+
+.Home .appstoreicon {
+  width: 20vh;
+}
+
+.Home .exampleoption {
+  width: 40vh;
+  margin-bottom: 2vh;
+}
+
+.Home .blurb {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.Home .emphasis {
+  font-weight: bold;
+  /* text-decoration: underline; */
+}
+
+.Home .section {
+  width: 100%;
+  padding: 2vh;
+}
+
+.Home .header {
+  min-height: 80vh;
+  background-color: #282c34;
+}
+
+.Home .problem {
+  background-color: lightgray;
+  color: black;
+  padding: 5vh;
+}
+
+.Home .problem table {
+  margin: 0 auto;
+  max-width: 750px;
+}
+
+.Home .problem table td {
+  text-align: left;
+  vertical-align: top;
+  padding: 1vh;
+}
+
+.Home .problem table td.icon {
+  color: green;
+}
+
+.Home .solution {
+  background-color: white;
+  color: black;
+  padding: 5vh;
+}
+
+.Home .qdnsystem {
+  background-color: lightgray;
+  color: black;
+  padding: 5vh;
+}
+
+.Home .qdnsystem table {
+  margin: 0 auto;
+}
+
+.Home .qdnsystem table td {
+  font-size: 2vh;
+  color: #282c34;
+}
+
+.Home .qdnsystem .outcome {
+  padding: 1vh 1vh 0vh 1vh;
+  width: 20vh;
+}

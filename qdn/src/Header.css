@@ -1,0 +1,22 @@
+.Header {
+  text-align: center;
+
+  background-color: #282c34;
+  /* min-height: 75vh; */
+  margin: 8vh 5vh 8vh 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Header-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.Header h1 {
+  margin: 10vh;
+}
