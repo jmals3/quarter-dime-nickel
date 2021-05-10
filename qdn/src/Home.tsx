@@ -10,6 +10,7 @@ import THH from "./img/Outcomes/THH.png"
 import THT from "./img/Outcomes/THT.png"
 import TTH from "./img/Outcomes/TTH.png"
 import TTT from "./img/Outcomes/TTT.png"
+import example from "./img/example.png"
 import './Home.css'
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from "react-router-dom";
@@ -73,7 +74,7 @@ function Home() {
         <h2>Master Your Indecision</h2>
         <div className="blurb">
           <p>In order to achieve your goals, you must unchain yourself from your own uncertainty.  Instead of toiling in your indecision, you can harness it.</p>
-          <p className="emphasis">QDN is your key.</p>
+          <p className="font-weight-bold">QDN is your key.</p>
           <p></p>
         </div>
       </div>
@@ -82,7 +83,6 @@ function Home() {
           <h2>The QDN System</h2>
           <p>QDN helps you quickly come to a decision for your problem.</p>
           <p>There are 8 possible outcomes when you flip a quarter, a dime, and a nickel.</p>
-          <a href="#"><i>Why is 8 significant?</i></a>
           <table className="outcome-table">
             <tbody>
               <tr>
@@ -122,14 +122,46 @@ function Home() {
           <br />
           <p>For each outcome, choose 1 possible course of action.</p>
           {/* <img src={exampleoption} className="exampleoption" /> */}
-          <p>Then flip the 3 coins, and get 1 result and <a href="#" className="emphasis">follow it.</a></p>
+          <p>Then flip the 3 coins, and get 1 result and <a href="#" className="font-weight-bold">follow it.</a></p>
         </div>
       </div>
       <div className="section example solution">
-      <div className="blurb">
+        <div className="blurb">
           <h2>Example</h2>
+          <p>Say you're having a difficult time deciding what to do with some free time.</p>
+          <p>QDN can assist you with this dilemma.</p>
+          <p>Simply come up with 8 things to do. <a href="#"><i>(Why 8?)</i></a></p>
+          <img src={example} height={600}/>
+          <p>Note that in this example, all options where the Quarter flips to heads involve productive activities while tails are more leisurely.</p>
+          <p>Many QDN players use the Quarter to separate their options like this.  Other examples include:
+            <table className="exampletable">
+              <thead>
+                <tr>
+                  <th>Heads</th>
+                  <th>Tails</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Healthy</td>
+                  <td>Unhealthy</td>
+                </tr>
+                <tr>
+                  <td>Constructive</td>
+                  <td>Destructive</td>
+                </tr>
+                <tr>
+                  <td>Respectable</td>
+                  <td>Reprehensible</td>
+                </tr>
+              </tbody>
+            </table>
+          </p>
+          <p>Also, note that in the example above, the options are ordered within the subsets.</p>
+          <p>If the Quarter is heads, all heads is a very elaborate meal while heads-tails-tails is an easy meal.</p>
+          <p>If the Quarter is tails, tails-heads-heads is a healthy, respectable option, while all tails is the most sinful treat.</p>
+          <p>This can be a helpful way to come up with options and organize your QDN's.</p>
         </div>
-        update the Play screen and use screenshots here.
       </div>
       <div className="section whyqnd problem">
         <div className="blurb">

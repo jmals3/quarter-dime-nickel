@@ -1,5 +1,5 @@
 .Home {
-  margin-top: -70px;
+  margin-top: -40px;
 
   text-align: center;
   display: flex;
@@ -31,6 +31,15 @@
   margin: 3vh;
 }
 
+/* .Home p ul, .Home li {
+  text-align: left;
+  margin-left: 10%;
+} */
+/* .Home p {
+  align-self: left;
+  text-align: left;
+} */
+
 .Home .playbtn {
   font-size: 5vh;
   padding: 0vh 5vh 0vh 5vh;
@@ -51,11 +60,6 @@
 .Home .blurb {
   max-width: 750px;
   margin: 0 auto;
-}
-
-.Home .emphasis {
-  font-weight: bold;
-  /* text-decoration: underline; */
 }
 
 .Home .section {
@@ -113,3 +117,11 @@
   padding: 1vh 1vh 0vh 1vh;
   width: 20vh;
 }
+
+.Home .exampletable {
+  margin: auto;
+}
+
+  .Home .exampletable td {
+    padding: 4px 12px;
+  }

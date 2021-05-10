@@ -1,27 +1,59 @@
 .Play {
   text-align: center;
-  
+  background-color: lightgray;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: darkgray;
+  color: black;
+  padding: 3vh;
+}
+
+.Play input {
+  background: none;
+  border-style: solid;
+  padding: 4px;
+  /* border-top: none;
+  border-right: none;
+  border-left: none; */
+}
+
+.Play input[type='checkbox'] {
+  margin-right: 1vh;
+}
+
+.Play .howtoplay {
+  margin: 2vh;
+  border: none;
+  background: none;
+  font-size: 2.25vh;
+  color: rgb(72, 72, 72);
+  text-decoration: underline;
+}
+
+.Play .rules {
+  font-size: 2.25vh;
+}
+
+.Play .decision {
+  margin: 0 2vh 4vh;
+  width: 82%;
 }
 
 .Play .outcome {
   padding: 1vh 1vh 0vh 1vh;
-  width: 25vh;
+  width: 20vh;
 }
 
 .Play .option {
   font-size: 14px;
   margin: 1vh 1vh 0vh 1vh;
+  width: 20vh;
 }
 
 .Play .gameboard {
   background-color: lightgray;
-  border: solid 0.5vh darkslategray;
   border-radius: 1vh;
   margin: 1vh;
   padding: 1vh;
@@ -29,6 +61,16 @@
   /* overflow-y: hidden; */
 }
 
+.Play .gameboard .soundeffect {
+  font-size: 2vh;
+}
+
 .Play .gameboard button {
-  margin-top: 2vh;
+  margin-top: 0.5vh;
+  width: 100px;
+  font-size: 2.5vh;
+}
+
+.Play .gameboard button:disabled {
+  background: none;
 }
