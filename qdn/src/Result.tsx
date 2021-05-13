@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import imgHHH from "./img/Outcomes/HHH.png"
 import imgHHT from "./img/Outcomes/HHT.png"
 import imgHTH from "./img/Outcomes/HTH.png"
@@ -15,7 +16,7 @@ type ResultProps = {
   coinImg: string
 }
 
-function getCoinImage(coinImg: string){
+function getCoinImage(coinImg: string) {
   switch (coinImg) {
     case "imgHHH":
       return imgHHH;
@@ -38,15 +39,16 @@ function getCoinImage(coinImg: string){
   }
 }
 
-function Result({decision, result, coinImg}: ResultProps) {
+function Result({ decision, result, coinImg }: ResultProps) {
   return (
     <div className="Result">
-      <h1></h1>
-      <h2>It has been decided.</h2>
-      <h2>Outcome</h2>
-      <img src={getCoinImage(coinImg)} />
-      <h2>{result}</h2>
-      
+      <h2>{decision}</h2>
+      {/* <h2>It has been decided.</h2> */}
+      <div className="result-box">
+        <img src={getCoinImage(coinImg)} />
+        <h2>{result}</h2>
+      </div>
+      <p className="reminder">Remember to give your choosen path a good faith effort before playing again to keep the game in your favor.</p>
     </div>
   )
 }

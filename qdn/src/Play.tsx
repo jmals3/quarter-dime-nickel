@@ -131,6 +131,8 @@ function Play() {
         setResult("");
         break;
     }
+
+    window.scrollTo(0, 0);
   }
 
   function handleUpdateHHH(e: React.ChangeEvent<HTMLInputElement>) {
@@ -183,6 +185,14 @@ function Play() {
     }
   }
 
+  function handleFinish() {
+    setResult("");
+    setCoinImg("");
+    // setDecision("");
+    // handleClear();
+    setShowRules("rules d-none");
+  }
+
   if (result === "") {
     return (
       <div className="Play">
@@ -196,7 +206,7 @@ function Play() {
           <p>Proceed with option selected for you.</p>
         </div>
         <div className="gameboard">
-          <table className="">
+          <table>
             <thead>
               <tr>
                 <th colSpan={2}>Decision</th>
@@ -304,6 +314,7 @@ function Play() {
       <div className="Play">
         <Topbar />
         <Result decision={decision} result={result} coinImg={coinImg} />
+        <button className="finish btn btn-dark" onClick={handleFinish}>Finish</button>
       </div>
     )
   }

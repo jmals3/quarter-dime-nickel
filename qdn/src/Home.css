@@ -118,10 +118,7 @@
   width: 20vh;
 }
 
-.Home .exampletable {
-  margin: auto;
+.Home .exampleImg {
+  height: 500px;
+  margin-bottom: 2vh;
 }
-
-  .Home .exampletable td {
-    padding: 4px 12px;
-  }
