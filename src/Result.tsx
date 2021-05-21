@@ -48,7 +48,7 @@ function Result({ decision, result, coinImg }: ResultProps) {
         <img src={getCoinImage(coinImg)} />
         <h2>{result}</h2>
       </div>
-      <p className="reminder">Remember to give your choosen path a good faith effort before playing again to keep the game in your favor.</p>
+      <p className="reminder">Remember to give your choosen path a good faith effort before playing again to keep the gods in your favor.</p>
     </div>
   )
 }
