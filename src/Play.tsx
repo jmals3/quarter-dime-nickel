@@ -8,7 +8,6 @@ import imgTHT from "./img/Outcomes/THT.png"
 import imgTTH from "./img/Outcomes/TTH.png"
 import imgTTT from "./img/Outcomes/TTT.png"
 import coinflip from "./audio/coinFlip.wav"
-// import coinflip from "./audio/coin-flip.wav"
 import './Play.css'
 import Topbar from './Topbar'
 import Result from './Result'
@@ -16,7 +15,7 @@ import Result from './Result'
 function Play() {
 
   const [showRules, setShowRules] = React.useState("rules d-none");
-  const [soundEffects, setSoundEffects] = React.useState(true);
+  const [soundEffects, setSoundEffects] = React.useState(false);
 
   const [decision, setDecision] = React.useState("");
 

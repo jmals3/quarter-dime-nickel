@@ -1,6 +1,6 @@
 {
   "name": "qdn",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -10,10 +10,10 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
-    "bootstrap": "^5.0.1",
     "react": "^17.0.0",
     "react-bootstrap": "^1.6.0",
     "react-dom": "^17.0.0",
+    "react-ga": "^3.3.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3"
   },

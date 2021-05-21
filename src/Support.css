@@ -1,0 +1,35 @@
+.Support {
+  text-align: center;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  padding: 3vh;
+  min-height: inherit;
+}
+
+.Support .cryptobox {
+  width: 95%;
+  max-width: 800px;
+  line-height: 90%;
+  border: 1px solid black;
+  padding: 2vh;
+  margin: 2vh auto;
+  background-color: darkgray;
+}
+
+.Support .cryptoaddress {
+  font-size: 12px;
+}
+
+.Support .cryptoaddress-sm {
+  font-size: 10px;
+}
+
+.Support .carousel-control-prev-icon, .Support .carousel-control-next-icon {
+  opacity: 0;
+  filter:alpha(opacity=0); /* IE support */
+}

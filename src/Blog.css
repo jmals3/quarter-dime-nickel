@@ -1,0 +1,40 @@
+.Blog {
+  text-align: center;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* font-size: calc(10px + 2vmin); */
+  color: black;
+  padding: 3vh;
+  min-height: inherit;
+}
+
+.Blog h1 {
+  margin-bottom: 4vh;
+}
+
+.Blog .linkbox {
+  width: 95%;
+  max-width: 800px;
+  line-height: 90%;
+  border: 1px solid black;
+  padding: 2vh;
+  margin: 2vh auto;
+  background-color: darkgray;
+}
+
+.Blog .articlebox {
+  width: 95%;
+  max-width: 800px;
+  text-align: left;
+}
+
+.Blog .articlebox h2 {
+  font-size: calc(10px + 2vmin)
+}
+
+.Blog .articlebox p {
+  font-size: calc(10px + 1vmin)
+}

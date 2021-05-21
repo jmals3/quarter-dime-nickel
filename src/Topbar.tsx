@@ -14,8 +14,8 @@ import './Topbar.css'
 function Topbar() {
   return (
     <div className="Topbar">
-      <Container>
-        <Navbar fixed="top" expand="sm" variant="dark">
+      <Navbar fixed="top" expand="sm" variant="dark">
+        <Container>
           <Navbar.Brand href="/">
             <img
               src={brand}
@@ -25,18 +25,18 @@ function Topbar() {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
-              <Nav.Link href="/">Home</Nav.Link>
+            <Nav className="me-auto">
               <Nav.Link href="/play">Play</Nav.Link>
-              <Nav.Link href="#">Blog</Nav.Link>
-              <Nav.Link href="#">Download</Nav.Link>
+              <Nav.Link href="/blog">Blog</Nav.Link>
+              <Nav.Link href="/support">Support</Nav.Link>
+              <Nav.Link href="/contact">Contact</Nav.Link>
             </Nav>
-            <Nav className="ml-auto">
+            {/* <Nav className="ms-auto">
             <Nav.Link href="#">Log out</Nav.Link>
-            </Nav>
+            </Nav> */}
           </Navbar.Collapse>
-        </Navbar>
-      </Container>
+        </Container>
+      </Navbar>
     </div>
   )
 }

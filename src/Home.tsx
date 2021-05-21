@@ -5,8 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import logo from './img/logo.png'
-import appstoreicon from './img/appstoreicon.svg'
-import exampleoption from './img/exampleoption.png'
+// import appstoreicon from './img/appstoreicon.svg'
+// import exampleoption from './img/exampleoption.png'
 import HHH from "./img/Outcomes/HHH.png"
 import HHT from "./img/Outcomes/HHT.png"
 import HTH from "./img/Outcomes/HTH.png"
@@ -27,14 +27,17 @@ function Home() {
     <div className="Home">
       <div className="Home-navbar">
         <Navbar expand="sm" variant="dark">
-          <Navbar.Toggle aria-controls="basic-navbar-nav" className="ml-auto" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ml-auto">
-              <Nav.Link href="/play">Play</Nav.Link>
-              <Nav.Link href="/blog">Blog</Nav.Link>
-              <Nav.Link href="/contact">Contact</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
+          <Container>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" className="ml-auto" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="ml-auto">
+                <Nav.Link href="/play">Play</Nav.Link>
+                <Nav.Link href="/blog">Blog</Nav.Link>
+                <Nav.Link href="/support">Support</Nav.Link>
+                <Nav.Link href="/contact">Contact</Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
         </Navbar>
       </div>
       <div className="section header">
@@ -130,7 +133,7 @@ function Home() {
           <h2>Example</h2>
           <p>Say you're having a difficult time deciding what to do with some free time.</p>
           <p>QDN can assist you with this dilemma.</p>
-          <p>Simply come up with 8 things to do. <a href="/blog/why-8"><i>(Why 8?)</i></a></p>
+          <p>Simply come up with 8 things to do. <a href="/blog/the-tenets-of-qdn"><i>(Why 8?)</i></a></p>
           <img src={example} className="exampleImg" />
           <p>Note that in this example, all options where the Quarter flips to heads involve productive activities while tails are more leisurely. Including some order in how you list your options is recommended to achieve optimal results.</p>
         </div>
@@ -138,7 +141,7 @@ function Home() {
       <div className="section whyqnd problem">
         <div className="blurb">
           <h2>What Are You Waiting For?</h2>
-          <p>If you follow the rules by coming up with 8 options for your problem, order them as you see fit, and always make a good faith effort to perform whichever option is selected for you, it is said that Lady Luck will always select the best option for you each time you play (even if it doesn't seem like it)!</p>
+          <p>If you follow the rules by coming up with 8 options for your problem, order them as you see fit, and always make a good faith effort to perform whichever option is selected for you, it is said that the gods of QDN will always select the best option for you each time you play (even if it doesn't seem like it)!</p>
           <Link to="/play" className="btn btn-dark playbtn">Play</Link>
           {/* <br />
           <img src={appstoreicon} className="appstoreicon" alt="App Store Icon" /> */}
