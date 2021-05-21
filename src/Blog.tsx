@@ -10,7 +10,6 @@ type BlogProps = {
 
 function Blog() {
   const { article }: BlogProps = useParams();
-  console.log(article);
 
   switch (article) {
     case undefined:
@@ -19,7 +18,7 @@ function Blog() {
           <Topbar />
           <h1>Blog</h1>
           <p className="linkbox"><a href="/blog/the-tenets-of-qdn">The Tenets of QDN</a></p>
-          <p className="linkbox"><a href="/blog/follow-it">The Most Important Rule</a></p>
+          {/* <p className="linkbox"><a href="/blog/follow-it">The Most Important Rule</a></p> */}
         </div>
       );
     case "the-tenets-of-qdn":

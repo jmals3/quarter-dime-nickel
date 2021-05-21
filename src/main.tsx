@@ -14,7 +14,7 @@ import Contact from './Contact'
 import Privacy from './Privacy'
 import ToS from './ToS'
 
-const trackingId = "G-D8CZ6P8GV5";
+const trackingId = "UA-197626707-1";
 ReactGA.initialize(trackingId);
 
 const history = createBrowserHistory();

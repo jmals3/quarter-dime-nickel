@@ -125,7 +125,7 @@ function Home() {
           <br />
           <p>For each outcome, choose 1 possible course of action.</p>
           {/* <img src={exampleoption} className="exampleoption" /> */}
-          <p>Then flip the 3 coins, and get 1 result and <a href="/blog/follow-it" className="font-weight-bold">follow it.</a></p>
+          <p>Then flip the 3 coins, and get 1 result and <a href="/blog/the-tenets-of-qdn" className="font-weight-bold">follow it.</a></p>
         </div>
       </div>
       <div className="section example solution">
