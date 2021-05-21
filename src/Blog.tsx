@@ -4,8 +4,12 @@ import Topbar from './Topbar'
 import './Blog.css'
 import { Container } from "react-bootstrap";
 
+type BlogProps = {
+  article: string
+}
+
 function Blog() {
-  const { article } = useParams();
+  const { article }: BlogProps = useParams();
   console.log(article);
 
   switch (article) {

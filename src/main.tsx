@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { Router, Route } from 'react-router-dom'
 import ReactGA from 'react-ga';
 import { createBrowserHistory } from 'history';
 import Home from './Home'
